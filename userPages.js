@@ -34,7 +34,7 @@ export function landingPage() {
   return `
   <section class="landing">
     <div class="hero">
-      <img src="/prism_logo.png" alt="PRISM logo" class="prism-logo-img" />
+      <img src="${import.meta.env.BASE_URL}prism_logo.png" alt="PRISM logo" class="prism-logo-img" />
       <h1 class="prism-title">PRISM</h1>
       <p class="tagline">Turn opinions into insights.</p>
       <p class="blurb">
