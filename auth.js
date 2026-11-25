@@ -1,12 +1,10 @@
-// auth.js
-// Handles signup and login for users, and login for admin.
-// Uses the storage functions from storage.js.
+
 
 import {
   addUser, findUserByEmail, setCurrentUser, clearCurrentUser, getCurrentUser,
 } from "./storage.js";
 
-// Sign up a new user. Returns true if ok, or an error message string.
+
 function signup(name, email, password) {
   if (!name || !email || !password) return "Please fill all fields.";
   if (findUserByEmail(email)) return "Email already registered.";
